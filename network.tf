@@ -1,5 +1,5 @@
 module "network" {
-  source              = "Azure/network/azurerm"
+  source              = "app.terraform.io/exist-software/network/azurerm"
   version             = "3.5.0"
   resource_group_name = "${var.prefix}-workshop"
   address_spaces      = ["10.0.0.0/16", "10.2.0.0/16"]
